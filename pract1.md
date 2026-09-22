@@ -13,11 +13,15 @@ nano banner
 #!/bin/bash
 
 text="$1"
+
 len=${#text}
+
 line=$(printf '%*s' $((len + 2)) '' | tr ' ' '-')
 
 echo "+$line+"
+
 echo "| $text |"
+
 echo "+$line+"
 
 ## После сохранения файла
