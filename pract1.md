@@ -41,6 +41,7 @@ nano reg
 #!/bin/bash
 
 chmod 755 "$1"
+
 cp "$1" /usr/local/bin/
 
 ## После сохранения файла
