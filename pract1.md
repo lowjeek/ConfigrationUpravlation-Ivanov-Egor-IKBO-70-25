@@ -92,3 +92,45 @@ find "$1" -type f -exec md5sum {} + | sort | uniq -w 32 --all-repeated=separate
 ```
 
 # === Задание 8 ===
+
+nano archive
+
+```bash
+
+#!/bin/bash
+
+find "$1" -type f -name "*.$2" > files.txt
+tar -cf archive.tar -T files.txt
+rm files.txt
+
+```
+
+chmod +x archive
+
+# === Задание 9 ===
+
+nano tabs
+
+```bash
+#!/bin/bash
+
+sed 's/    /\t/g' "$1" > "$2"
+```
+
+chmod +x tabs
+
+# === Задание 10 ===
+
+nano empty
+
+```bash
+
+#!/bin/bash
+
+find "$1" -maxdepth 1 -type f -empty -print
+```
+
+chmod +x empty
+
+
+
