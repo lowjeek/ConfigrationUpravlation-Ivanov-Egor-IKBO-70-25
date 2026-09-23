@@ -48,3 +48,28 @@ cp "$1" /usr/local/bin/
 chmod +x reg
 
 ./reg banner
+
+# === Задание 6 ===
+
+nano checl
+
+## Внутри файла
+
+#!/bin/bash
+
+for file in *.c *.j *.py
+do
+    [ -f "$file" ] || continue
+
+    if head -n 1 "$file" | grep -qE '^//|^#'
+    then
+        echo "$file: есть комментарий"
+    else
+        echo "$file: нет комментария"
+    fi
+done
+
+## После создания
+
+chmod +x check
+./check
