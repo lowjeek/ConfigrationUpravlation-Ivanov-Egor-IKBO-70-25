@@ -10,6 +10,7 @@ cat /etc/protocols | sort -k2 -nr | head -5
 nano banner
 
 ## Внутри banner
+```bash
 #!/bin/bash
 
 text="$1"
@@ -23,6 +24,8 @@ echo "+$line+"
 echo "| $text |"
 
 echo "+$line+"
+
+```
 
 ## После сохранения файла
 chmod +x banner
