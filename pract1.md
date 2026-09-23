@@ -29,3 +29,5 @@ chmod +x banner
 
 ./banner "Hello from RTU MIREA!"
 
+# === Задание 4 ===
+grep -oE '[a-zA-Z_][a-zA-Z0-9_]*' hello.c | sort -u
