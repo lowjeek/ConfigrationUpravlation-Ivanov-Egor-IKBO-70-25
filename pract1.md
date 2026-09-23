@@ -31,3 +31,20 @@ chmod +x banner
 
 # === Задание 4 ===
 grep -oE '[a-zA-Z_][a-zA-Z0-9_]*' hello.c | sort -u
+
+# === Задание 5 ===
+
+nano reg
+
+## Внутри reg
+
+#!/bin/bash
+
+chmod 755 "$1"
+cp "$1" /usr/local/bin/
+
+## После сохранения файла
+
+chmod +x reg
+
+./reg banner
