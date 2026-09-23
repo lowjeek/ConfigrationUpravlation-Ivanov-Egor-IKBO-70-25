@@ -55,7 +55,7 @@ nano check
 
 ## Внутри файла
 
-#!/bin/bash
+'''#!/bin/bash
 
 for file in *.c *.j *.py
 do
