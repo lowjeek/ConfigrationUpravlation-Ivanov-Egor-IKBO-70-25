@@ -51,7 +51,7 @@ chmod +x reg
 
 # === Задание 6 ===
 
-nano checl
+nano check
 
 ## Внутри файла
 
@@ -72,4 +72,5 @@ done
 ## После создания
 
 chmod +x check
+
 ./check
