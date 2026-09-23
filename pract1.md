@@ -54,8 +54,8 @@ chmod +x reg
 nano check
 
 ## Внутри файла
-
-'''#!/bin/bash
+```bash
+#!/bin/bash
 
 for file in *.c *.j *.py
 do
@@ -68,6 +68,7 @@ do
         echo "$file: нет комментария"
     fi
 done
+```
 
 ## После создания
 
